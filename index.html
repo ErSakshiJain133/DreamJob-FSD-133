@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>SakshiJain-FSD133</title>
+  <style>
+      /* core style*/
+body{
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #333;
+  color: #fff;
+  font-size: 1.1em;
+  line-height: 1.5;
+  text-align: center;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  padding: 1em 0;
+}
+
+p {
+  margin: 0;
+  padding: 1em 0;
+}
+
+.btn {
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  text-decoration: none;
+  padding: 1em 2em;
+  border: 1px solid #666;
+  margin: 0.5em 0;
+}
+
+.btn:hover {
+  background: #eaeaea;
+  color: #333;
+}
+
+/*Header*/
+#showcase {
+  min-height: 450px;
+  color: #fff;
+  text-align: center;
+}
+
+#showcase .bg-image {
+  position: absolute;
+  background: #333 url(https://images.pexels.com/photos/247791/pexels-photo-247791.png?cs=srgb&dl=codes-coding-computer-247791.jpg&fm=jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 450px;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+#showcase h1 {
+  padding-top: 100px;
+  padding-bottom: 0;
+}
+
+#showcase .content-wrap, #section-a .content-wrap {
+  padding: 0 1.5em;
+}
+
+/* section a*/
+#section-a {
+  background: #eaeaea;
+  color: #333;
+  padding-bottom: 2em;
+}
+
+/*section b*/
+#section-b {
+  padding: 2em 1em 1em;
+}
+
+#section-b ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#section-b li {
+  margin-bottom: 1em;
+  background: #fff;
+  color: #333;
+}
+
+.card-content {
+  padding: 1.5em;
+}
+
+/*section c*/
+#section-c {
+  background: #fff;
+  color: #333;
+  padding: 2em;
+}
+
+/*section d*/
+#section-d .box {
+  padding: 2em;
+  color: #fff;
+}
+
+#section-d .box:first-child {
+  background: #2690d4;
+}
+
+/*footer*/
+#main-footer {
+  padding: 2em;
+  background: #000;
+  color: #fff;
+  text-align: center;
+}
+
+#main-footer a {
+  color: #2690d4;
+  text-decoration: none;
+}
+
+/*media query*/
+
+@media(min-width: 700px){
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+  }
+
+  #section-a .content-text {
+    columns: 2;
+    column-gap: 2em;
+  }
+
+  #section-a .content-text p {
+    padding-top: 0;
+  }
+
+  .content-wrap, #section-b ul {
+    grid-column: 2/4;
+  }
+
+  .box, #main-footer div {
+    grid-column: span 2;
+  }
+
+  #section-b ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  #section-b li {
+    width: 31%;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <!-- Header showcase -->
+  <header id="showcase" class="grid">
+    <div class="bg-image"></div>
+    <div class="content-wrap">
+      <h1>Welcome to SJ Web Solutions</h1>
+      <p>A Full Stack Developer is someone who works with the Back End — or server side — of the application as well as the Front End, or client side..</p>
+      <a href="linkedin.com/in/er-sakshi-jain-863634188" class="btn">Read More</a>
+    </div>
+  </header>
+
+  <!-- main area-->
+  <main id="main">
+    <!-- section a-->
+    <section class="grid" id="section-a">
+      <div class="content-wrap">
+        <h2 class="content-title">Web & Application Development</h2>
+        <div class="content-text">
+          <p>Web development is the work involved in developing a website for the Internet (World Wide Web) or an intranet (a private network). Web development can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social network services.</p>
+        </div>
+      </div>
+    </section>
+
+    <!--section b -->
+    <section class="grid" id="section-b">
+      <ul>
+        <li>
+          <div class="card">
+            <img src="https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?cs=srgb&dl=code-coding-computer-574071.jpg&fm=jpg" alt="">
+            <div class="card-content">
+              <h3 class="card-title">Web Development</h3>
+              <p>Web development refers to the building, creating, and maintaining of websites. It includes aspects such as web design, web publishing, web programming, and database management. It is the creation of an application that works over the internet i.e. websites..</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="card">
+            <img src="https://images.pexels.com/photos/261628/pexels-photo-261628.jpeg?cs=srgb&dl=access-adult-blur-261628.jpg&fm=jpg" alt="">
+            <div class="card-content">
+              <h3 class="card-title">Mobile Applications</h3>
+              <p>Mobile app development is the act or process by which a mobile app is developed for mobile devices, such as personal digital assistants, enterprise digital assistants or mobile phones. These software applications are designed to run on mobile devices, such as a smartphone or tablet computer.</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="card">
+            <img src="https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?cs=srgb&dl=business-charts-commerce-265087.jpg&fm=jpg" alt="">
+            <div class="card-content">
+              <h3 class="card-title">Tech Development</h3>
+              <p>Technical Development means any invention, discovery, composition, enhancement, technology, advancement, know-how, process, data, device, machine, material, software or any other information arising from the Program, including any such development protectable by patent, copyright, or other protection under the law and ....</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- section c =-->
+    <section id="section-c" class="grid">
+      <div class="content-wrap">
+        <h2 class="content-title">We Handle All Of You Technical Needs</h2>
+        <p>Our web app engineering team has delivered products to over 400 clients, including global brands such as Google, Pepsi, Hilton, Redbull, and Sony Music. Our technology stack includes the newest technologies such as React.js, Angular.js, Vue.js, PostgreSQL, Python, MongoDB, Node.js, etc..</p>
+      </div>
+    </section>
+
+    <!-- section D -->
+    <section id="section-d" class="grid">
+      <div class="box">
+        <h2 class="content-title">Contact Us</h2>
+        <p>Full Stack Python Developer uses Angular as a frontend framework, Django as a backend framework, PostgreSQL for database, and besides Bootstrap, I'm looking forward to enhancing my skills through working in challengable projects with a professional team, I depend mostly on self-learning to gain new skills</p>
+        <p>er.sakshijain133@gmailcom</p>
+      </div>
+      <div class="box">
+        <h2 class="content-title"> About Our Company</h2>
+        <p>we can improve business, society and the human condition, bringing the power of an open hybrid cloud and AI strategy to life for our clients and partners around the world.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- footer -->
+  <footer class="grid" id="main-footer">
+    <div>SJ Web Solutions</div>
+    <div>Project By <a href="https://ersakshijain133.github.io/MissionSuccess133/" target="_blank">Success Story</a></div>
+  </footer>
+</body>
+</html>
